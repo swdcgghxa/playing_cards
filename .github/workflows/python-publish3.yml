@@ -27,8 +27,8 @@ jobs:
       run: |
         poetry update
         poetry install
-    - name: Build and publish --build
+    - name: Build and publish
       env:
         POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOCKEN }}
       run: |
-        poetry publish
+        poetry publish  --build
