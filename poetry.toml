@@ -1,0 +1,14 @@
+cache-dir = "C:\\Users\\wuyoujie\\AppData\\Local\\pypoetry\\Cache"
+
+[experimental]
+"new-installer"= false
+
+[virtualenvs]
+create = false
+path = "{cache-dir}\\virtualenvs"
+
+
+[installer]
+parallel = false
+
+# poetry config --local pypi-token.pypi token
