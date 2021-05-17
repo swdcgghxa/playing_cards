@@ -31,4 +31,5 @@ jobs:
       env:
         POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOCKEN }}
       run: |
+        python -m zipapp playing_cards -o playcar.pyz -m "playing_cards.main:run"
         poetry publish --build
